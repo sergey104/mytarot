@@ -40,7 +40,7 @@ int main(int argc, char **argv)
 //cout << elem.num << "  " << elem.read << endl;
 
 	std::string s1 = std::to_string(elem.num);
-    std::string s = "INSERT INTO Cards VALUES("+std::to_string(k)+"," + s1 + "," + "\""+elem.read+"\")";
+    std::string s = "INSERT INTO Cards VALUES("+std::to_string(k)+"," + s1 + "," + "\""+elem.read+")";
 	  cout << s << endl;
   if (mysql_query(con, s.c_str())) {
       finish_with_error(con);
